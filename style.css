@@ -29,13 +29,18 @@
     text-align: left;
 }
 .hadding_secendary{
-
+    color: rgb(24, 25, 31);
+    font-family: Poppins;
+    font-size: 1.50rem;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
 }
 .paragraph_primary{
     color: rgb(58, 58, 58);
     font-family: Poppins;
     font-size: .90rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 20px;
     text-align: left;
     margin: 15px 0px;
@@ -112,7 +117,7 @@ header{
 
 .sponsor_container{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     justify-content: space-around;
     align-items: center;
     margin: 70px 0px;
@@ -124,6 +129,29 @@ header{
 .sponsor_content img{
     width: 100%;
 }
+
+/* Collection_container */
+.Collection_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   justify-content: center;
+   margin: 40px 0px;
+
+    
+}
+.collection_card{
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+/* .collection_card img{
+    width: 100%;
+} */
 
 
 
