@@ -112,6 +112,21 @@ header{
 .main{
     width: 85%;
     margin: 40px auto;
+    /* position: relative; */
+
+}
+
+
+/* live_chat */
+.live_chat a{
+    background-color: #27ae60;
+    font-size: 2rem;
+    position: fixed;
+    top: 70%;
+    right: 0;
+    padding: 5px 20px;
+    border-radius: 25px 0px 0px 25px;
+    color: #fff;
 
 }
 
@@ -160,10 +175,19 @@ header{
 
 /* mobile responsive */
 @media all and (max-width: 576px) {
+
+    /* live chat  */
+    .live_chat a{
+        padding: 5px 10px;
+        font-size: 1rem;
+        border-radius: 20px 0px 0px 20px;
+    }
+
     .navber{
         flex-direction: column;
         justify-items: center;
         gap: 15px;
+        top: 90%;
     }
     .navber_nav{
         gap: 15px;
@@ -182,6 +206,11 @@ header{
         gap: 20px;
         justify-content: center;
     }
+    /* card section  */
+    .Collection_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
 
 }
 /* tablet responsive */
@@ -198,6 +227,9 @@ header{
     }
     .banner_image{
         width: 100%;
+    }
+    .Collection_container{
+        grid-template-columns: repeat(1, 1fr);
     }
     
     
