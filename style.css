@@ -9,7 +9,16 @@
 
 /* primary Work  */
 .btn_primary{
-
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: .90rem;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    border: none;
+    padding: 12px 15px;
 }
 .hadding_primary{
     color: rgb(58, 58, 58);
@@ -23,7 +32,20 @@
 
 }
 .paragraph_primary{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: .90rem;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    margin: 15px 0px;
+}
+.text_align{
+    text-align: center;
+}
 
+main > section{
+    margin: 50px 0px;
 }
 
 /* header */
@@ -52,7 +74,46 @@ header{
     font-size: .85rem;
     font-weight: 600;
 }
+/* banner section design  */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 30px 0px;
 
+}
+
+.banner_hadding{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+}
+.banner_image{
+    width: 50%;
+    background-image: url(./images/Circle\ design.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner_image img{
+    width: 100%;
+}
+
+/* main */
+.main{
+    width: 85%;
+}
+
+
+
+
+
+
+/* mobile responsive */
 @media all and (max-width: 576px) {
     .navber{
         flex-direction: column;
@@ -62,13 +123,30 @@ header{
     .navber_nav{
         gap: 15px;
     }
+    /* .banner */
+    .banner{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner_image{
+        width: 100%;
+    }
 }
-
+/* tablet responsive */
 @media all and (min-width: 576px) and (max-width: 768px) {
     .navber{
         flex-direction: column;
         justify-items: center;
         gap: 20px;
     }
+    /* .banner */
+    .banner{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner_image{
+        width: 100%;
+    }
+    
     
 }
